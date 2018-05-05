@@ -10,6 +10,7 @@ import trains from './src/trains'
 const ds = new DarkSky(process.env.DARKSKY_KEY)
 
 const app = new Koa()
+const PORT = process.env.PORT || 8080
 
 app.use(keepalive())
 app.use(serve('public'))
@@ -25,4 +26,4 @@ app.use(_.get('/api', async ctx => {
   }
 }))
 
-app.listen(process.env.PORT)
+app.listen(PORT)
