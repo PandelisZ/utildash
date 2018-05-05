@@ -1,0 +1,936 @@
+{
+  "{\"filename\":\"/app/server.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "koa",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "Koa"
+              }
+            ]
+          },
+          {
+            "source": "koa-glitch-keepalive",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "keepalive"
+              }
+            ]
+          },
+          {
+            "source": "dark-sky-api",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "DarkSkyApi"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/server.js",
+      "filenameRelative": "/app/server.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "server.js",
+      "sourceFileName": "server.js",
+      "sourceRoot": "/app",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "server"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nimport Koa from 'koa';\nimport keepalive from 'koa-glitch-keepalive';\nimport DarkSkyApi from 'dark-sky-api';\n\nconst app = new Koa();\n\napp.use(keepalive());\n\napp.use(ctx => {\n  ctx.body = 'Hello, world!';\n});\n\napp.listen(process.env.PORT);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlcnZlci5qcyJdLCJuYW1lcyI6WyJLb2EiLCJrZWVwYWxpdmUiLCJEYXJrU2t5QXBpIiwiYXBwIiwidXNlIiwiY3R4IiwiYm9keSIsImxpc3RlbiIsInByb2Nlc3MiLCJlbnYiLCJQT1JUIl0sIm1hcHBpbmdzIjoiQUFBQTs7QUFFQSxPQUFPQSxHQUFQLE1BQWdCLEtBQWhCO0FBQ0EsT0FBT0MsU0FBUCxNQUFzQixzQkFBdEI7QUFDQSxPQUFPQyxVQUFQLE1BQXVCLGNBQXZCOztBQUVBLE1BQU1DLE1BQU0sSUFBSUgsR0FBSixFQUFaOztBQUVBRyxJQUFJQyxHQUFKLENBQVFILFdBQVI7O0FBRUFFLElBQUlDLEdBQUosQ0FBUUMsT0FBTztBQUNiQSxNQUFJQyxJQUFKLEdBQVcsZUFBWDtBQUNELENBRkQ7O0FBSUFILElBQUlJLE1BQUosQ0FBV0MsUUFBUUMsR0FBUixDQUFZQyxJQUF2QiIsImZpbGUiOiJzZXJ2ZXIuanMiLCJzb3VyY2VSb290IjoiL2FwcCIsInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0J1xuXG5pbXBvcnQgS29hIGZyb20gJ2tvYSdcbmltcG9ydCBrZWVwYWxpdmUgZnJvbSAna29hLWdsaXRjaC1rZWVwYWxpdmUnXG5pbXBvcnQgRGFya1NreUFwaSBmcm9tICdkYXJrLXNreS1hcGknXG5cbmNvbnN0IGFwcCA9IG5ldyBLb2EoKVxuXG5hcHAudXNlKGtlZXBhbGl2ZSgpKVxuXG5hcHAudXNlKGN0eCA9PiB7XG4gIGN0eC5ib2R5ID0gJ0hlbGxvLCB3b3JsZCEnXG59KVxuXG5hcHAubGlzdGVuKHByb2Nlc3MuZW52LlBPUlQpIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "server.js"
+      ],
+      "names": [
+        "Koa",
+        "keepalive",
+        "DarkSkyApi",
+        "app",
+        "use",
+        "ctx",
+        "body",
+        "listen",
+        "process",
+        "env",
+        "PORT"
+      ],
+      "mappings": "AAAA;;AAEA,OAAOA,GAAP,MAAgB,KAAhB;AACA,OAAOC,SAAP,MAAsB,sBAAtB;AACA,OAAOC,UAAP,MAAuB,cAAvB;;AAEA,MAAMC,MAAM,IAAIH,GAAJ,EAAZ;;AAEAG,IAAIC,GAAJ,CAAQH,WAAR;;AAEAE,IAAIC,GAAJ,CAAQC,OAAO;AACbA,MAAIC,IAAJ,GAAW,eAAX;AACD,CAFD;;AAIAH,IAAII,MAAJ,CAAWC,QAAQC,GAAR,CAAYC,IAAvB",
+      "file": "server.js",
+      "sourceRoot": "/app",
+      "sourcesContent": [
+        "'use strict'\n\nimport Koa from 'koa'\nimport keepalive from 'koa-glitch-keepalive'\nimport DarkSkyApi from 'dark-sky-api'\n\nconst app = new Koa()\n\napp.use(keepalive())\n\napp.use(ctx => {\n  ctx.body = 'Hello, world!'\n})\n\napp.listen(process.env.PORT)"
+      ]
+    },
+    "mtime": 1525532463261
+  },
+  "{\"filename\":\"/app/server.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3": {
+    "metadata": {
+      "usedHelpers": [
+        "asyncToGenerator",
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "koa",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "Koa"
+              }
+            ]
+          },
+          {
+            "source": "koa-glitch-keepalive",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "keepalive"
+              }
+            ]
+          },
+          {
+            "source": "dark-sky",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "DarkSky"
+              }
+            ]
+          },
+          {
+            "source": "moment",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "moment"
+              }
+            ]
+          },
+          {
+            "source": "koa-route",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "_"
+              }
+            ]
+          },
+          {
+            "source": "koa-static",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "serve"
+              }
+            ]
+          },
+          {
+            "source": "./src/water",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "water"
+              }
+            ]
+          },
+          {
+            "source": "./src/trains",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "trains"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/server.js",
+      "filenameRelative": "/app/server.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "server.js",
+      "sourceFileName": "server.js",
+      "sourceRoot": "/app",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "server"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar _koa = require('koa');\n\nvar _koa2 = _interopRequireDefault(_koa);\n\nvar _koaGlitchKeepalive = require('koa-glitch-keepalive');\n\nvar _koaGlitchKeepalive2 = _interopRequireDefault(_koaGlitchKeepalive);\n\nvar _darkSky = require('dark-sky');\n\nvar _darkSky2 = _interopRequireDefault(_darkSky);\n\nvar _moment = require('moment');\n\nvar _moment2 = _interopRequireDefault(_moment);\n\nvar _koaRoute = require('koa-route');\n\nvar _koaRoute2 = _interopRequireDefault(_koaRoute);\n\nvar _koaStatic = require('koa-static');\n\nvar _koaStatic2 = _interopRequireDefault(_koaStatic);\n\nvar _water = require('./src/water');\n\nvar _water2 = _interopRequireDefault(_water);\n\nvar _trains = require('./src/trains');\n\nvar _trains2 = _interopRequireDefault(_trains);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step(\"next\", value); }, function (err) { step(\"throw\", err); }); } } return step(\"next\"); }); }; }\n\nvar ds = new _darkSky2.default(process.env.DARKSKY_KEY);\n\nvar app = new _koa2.default();\n\napp.use((0, _koaGlitchKeepalive2.default)());\napp.use((0, _koaStatic2.default)('public'));\n\n// call with /api?time=YYYY-MM-DD&lat=0.00000&lng=0.00000\napp.use(_koaRoute2.default.get('/api', function () {\n  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(ctx) {\n    var time, weather;\n    return regeneratorRuntime.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            time = (0, _moment2.default)(ctx.request.query.time);\n            _context.next = 3;\n            return ds.coordinates({ lat: ctx.request.query.lat, lng: ctx.request.query.lng }).time(time).get();\n\n          case 3:\n            _context.t0 = _context.sent.daily.data[0];\n            weather = [_context.t0];\n\n            ctx.body = {\n              weather: weather,\n              water: (0, _water2.default)(weather),\n              trains: (0, _trains2.default)(weather)\n            };\n\n          case 6:\n          case 'end':\n            return _context.stop();\n        }\n      }\n    }, _callee, undefined);\n  }));\n\n  return function (_x) {\n    return _ref.apply(this, arguments);\n  };\n}()));\n\napp.listen(process.env.PORT);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlcnZlci5qcyJdLCJuYW1lcyI6WyJkcyIsIkRhcmtTa3kiLCJwcm9jZXNzIiwiZW52IiwiREFSS1NLWV9LRVkiLCJhcHAiLCJLb2EiLCJ1c2UiLCJfIiwiZ2V0IiwiY3R4IiwidGltZSIsInJlcXVlc3QiLCJxdWVyeSIsImNvb3JkaW5hdGVzIiwibGF0IiwibG5nIiwiZGFpbHkiLCJkYXRhIiwid2VhdGhlciIsImJvZHkiLCJ3YXRlciIsInRyYWlucyIsImxpc3RlbiIsIlBPUlQiXSwibWFwcGluZ3MiOiI7O0FBQUE7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7Ozs7Ozs7QUFFQSxJQUFNQSxLQUFLLElBQUlDLGlCQUFKLENBQVlDLFFBQVFDLEdBQVIsQ0FBWUMsV0FBeEIsQ0FBWDs7QUFFQSxJQUFNQyxNQUFNLElBQUlDLGFBQUosRUFBWjs7QUFFQUQsSUFBSUUsR0FBSixDQUFRLG1DQUFSO0FBQ0FGLElBQUlFLEdBQUosQ0FBUSx5QkFBTSxRQUFOLENBQVI7O0FBRUE7QUFDQUYsSUFBSUUsR0FBSixDQUFRQyxtQkFBRUMsR0FBRixDQUFNLE1BQU47QUFBQSxxRUFBYyxpQkFBTUMsR0FBTjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDZEMsZ0JBRGMsR0FDUCxzQkFBT0QsSUFBSUUsT0FBSixDQUFZQyxLQUFaLENBQWtCRixJQUF6QixDQURPO0FBQUE7QUFBQSxtQkFFSVgsR0FBR2MsV0FBSCxDQUFlLEVBQUVDLEtBQUtMLElBQUlFLE9BQUosQ0FBWUMsS0FBWixDQUFrQkUsR0FBekIsRUFBOEJDLEtBQUtOLElBQUlFLE9BQUosQ0FBWUMsS0FBWixDQUFrQkcsR0FBckQsRUFBZixFQUEyRUwsSUFBM0UsQ0FBZ0ZBLElBQWhGLEVBQXNGRixHQUF0RixFQUZKOztBQUFBO0FBQUEsd0NBRWlHUSxLQUZqRyxDQUV1R0MsSUFGdkcsQ0FFNEcsQ0FGNUc7QUFFZEMsbUJBRmM7O0FBR3BCVCxnQkFBSVUsSUFBSixHQUFXO0FBQ1RELDhCQURTO0FBRVRFLHFCQUFPLHFCQUFNRixPQUFOLENBRkU7QUFHVEcsc0JBQVEsc0JBQU9ILE9BQVA7QUFIQyxhQUFYOztBQUhvQjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxHQUFkOztBQUFBO0FBQUE7QUFBQTtBQUFBLElBQVI7O0FBVUFkLElBQUlrQixNQUFKLENBQVdyQixRQUFRQyxHQUFSLENBQVlxQixJQUF2QiIsImZpbGUiOiJzZXJ2ZXIuanMiLCJzb3VyY2VSb290IjoiL2FwcCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBLb2EgZnJvbSAna29hJ1xuaW1wb3J0IGtlZXBhbGl2ZSBmcm9tICdrb2EtZ2xpdGNoLWtlZXBhbGl2ZSdcbmltcG9ydCBEYXJrU2t5IGZyb20gJ2Rhcmstc2t5J1xuaW1wb3J0IG1vbWVudCBmcm9tICdtb21lbnQnXG5pbXBvcnQgXyBmcm9tICdrb2Etcm91dGUnXG5pbXBvcnQgc2VydmUgZnJvbSAna29hLXN0YXRpYydcbmltcG9ydCB3YXRlciBmcm9tICcuL3NyYy93YXRlcidcbmltcG9ydCB0cmFpbnMgZnJvbSAnLi9zcmMvdHJhaW5zJ1xuXG5jb25zdCBkcyA9IG5ldyBEYXJrU2t5KHByb2Nlc3MuZW52LkRBUktTS1lfS0VZKVxuXG5jb25zdCBhcHAgPSBuZXcgS29hKClcblxuYXBwLnVzZShrZWVwYWxpdmUoKSlcbmFwcC51c2Uoc2VydmUoJ3B1YmxpYycpKVxuXG4vLyBjYWxsIHdpdGggL2FwaT90aW1lPVlZWVktTU0tREQmbGF0PTAuMDAwMDAmbG5nPTAuMDAwMDBcbmFwcC51c2UoXy5nZXQoJy9hcGknLCBhc3luYyBjdHggPT4ge1xuICBjb25zdCB0aW1lID0gbW9tZW50KGN0eC5yZXF1ZXN0LnF1ZXJ5LnRpbWUpXG4gIGNvbnN0IHdlYXRoZXIgPSBbKGF3YWl0IGRzLmNvb3JkaW5hdGVzKHsgbGF0OiBjdHgucmVxdWVzdC5xdWVyeS5sYXQsIGxuZzogY3R4LnJlcXVlc3QucXVlcnkubG5nIH0pLnRpbWUodGltZSkuZ2V0KCkpLmRhaWx5LmRhdGFbMF1dXG4gIGN0eC5ib2R5ID0ge1xuICAgIHdlYXRoZXIsXG4gICAgd2F0ZXI6IHdhdGVyKHdlYXRoZXIpLFxuICAgIHRyYWluczogdHJhaW5zKHdlYXRoZXIpXG4gIH1cbn0pKVxuXG5hcHAubGlzdGVuKHByb2Nlc3MuZW52LlBPUlQpXG4iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "server.js"
+      ],
+      "names": [
+        "ds",
+        "DarkSky",
+        "process",
+        "env",
+        "DARKSKY_KEY",
+        "app",
+        "Koa",
+        "use",
+        "_",
+        "get",
+        "ctx",
+        "time",
+        "request",
+        "query",
+        "coordinates",
+        "lat",
+        "lng",
+        "daily",
+        "data",
+        "weather",
+        "body",
+        "water",
+        "trains",
+        "listen",
+        "PORT"
+      ],
+      "mappings": ";;AAAA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;;;;;AAEA,IAAMA,KAAK,IAAIC,iBAAJ,CAAYC,QAAQC,GAAR,CAAYC,WAAxB,CAAX;;AAEA,IAAMC,MAAM,IAAIC,aAAJ,EAAZ;;AAEAD,IAAIE,GAAJ,CAAQ,mCAAR;AACAF,IAAIE,GAAJ,CAAQ,yBAAM,QAAN,CAAR;;AAEA;AACAF,IAAIE,GAAJ,CAAQC,mBAAEC,GAAF,CAAM,MAAN;AAAA,qEAAc,iBAAMC,GAAN;AAAA;AAAA;AAAA;AAAA;AAAA;AACdC,gBADc,GACP,sBAAOD,IAAIE,OAAJ,CAAYC,KAAZ,CAAkBF,IAAzB,CADO;AAAA;AAAA,mBAEIX,GAAGc,WAAH,CAAe,EAAEC,KAAKL,IAAIE,OAAJ,CAAYC,KAAZ,CAAkBE,GAAzB,EAA8BC,KAAKN,IAAIE,OAAJ,CAAYC,KAAZ,CAAkBG,GAArD,EAAf,EAA2EL,IAA3E,CAAgFA,IAAhF,EAAsFF,GAAtF,EAFJ;;AAAA;AAAA,wCAEiGQ,KAFjG,CAEuGC,IAFvG,CAE4G,CAF5G;AAEdC,mBAFc;;AAGpBT,gBAAIU,IAAJ,GAAW;AACTD,8BADS;AAETE,qBAAO,qBAAMF,OAAN,CAFE;AAGTG,sBAAQ,sBAAOH,OAAP;AAHC,aAAX;;AAHoB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,GAAd;;AAAA;AAAA;AAAA;AAAA,IAAR;;AAUAd,IAAIkB,MAAJ,CAAWrB,QAAQC,GAAR,CAAYqB,IAAvB",
+      "file": "server.js",
+      "sourceRoot": "/app",
+      "sourcesContent": [
+        "import Koa from 'koa'\nimport keepalive from 'koa-glitch-keepalive'\nimport DarkSky from 'dark-sky'\nimport moment from 'moment'\nimport _ from 'koa-route'\nimport serve from 'koa-static'\nimport water from './src/water'\nimport trains from './src/trains'\n\nconst ds = new DarkSky(process.env.DARKSKY_KEY)\n\nconst app = new Koa()\n\napp.use(keepalive())\napp.use(serve('public'))\n\n// call with /api?time=YYYY-MM-DD&lat=0.00000&lng=0.00000\napp.use(_.get('/api', async ctx => {\n  const time = moment(ctx.request.query.time)\n  const weather = [(await ds.coordinates({ lat: ctx.request.query.lat, lng: ctx.request.query.lng }).time(time).get()).daily.data[0]]\n  ctx.body = {\n    weather,\n    water: water(weather),\n    trains: trains(weather)\n  }\n}))\n\napp.listen(process.env.PORT)\n"
+      ]
+    },
+    "mtime": 1525546752080
+  },
+  "{\"filename\":\"/app/src/water.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/src\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/src/water.js",
+      "filenameRelative": "/app/src/water.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "water.js",
+      "sourceFileName": "water.js",
+      "sourceRoot": "/app/src",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/src",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "water"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n// this file should calculate the risks for water\nexports.default = function (weather) {\n  return {\n    risk: 'low', // low. medium, high\n    reason: 'Some reason why it\\'s the above risk.'\n  };\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndhdGVyLmpzIl0sIm5hbWVzIjpbIndlYXRoZXIiLCJyaXNrIiwicmVhc29uIl0sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQTtrQkFDZSxVQUFDQSxPQUFELEVBQWE7QUFDMUIsU0FBTztBQUNMQyxVQUFNLEtBREQsRUFDUTtBQUNiQyxZQUFRO0FBRkgsR0FBUDtBQUlELEMiLCJmaWxlIjoid2F0ZXIuanMiLCJzb3VyY2VSb290IjoiL2FwcC9zcmMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyB0aGlzIGZpbGUgc2hvdWxkIGNhbGN1bGF0ZSB0aGUgcmlza3MgZm9yIHdhdGVyXG5leHBvcnQgZGVmYXVsdCAod2VhdGhlcikgPT4ge1xuICByZXR1cm4ge1xuICAgIHJpc2s6ICdsb3cnLCAvLyBsb3cuIG1lZGl1bSwgaGlnaFxuICAgIHJlYXNvbjogJ1NvbWUgcmVhc29uIHdoeSBpdFxcJ3MgdGhlIGFib3ZlIHJpc2suJ1xuICB9XG59Il19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "water.js"
+      ],
+      "names": [
+        "weather",
+        "risk",
+        "reason"
+      ],
+      "mappings": ";;;;;;AAAA;kBACe,UAACA,OAAD,EAAa;AAC1B,SAAO;AACLC,UAAM,KADD,EACQ;AACbC,YAAQ;AAFH,GAAP;AAID,C",
+      "file": "water.js",
+      "sourceRoot": "/app/src",
+      "sourcesContent": [
+        "// this file should calculate the risks for water\nexport default (weather) => {\n  return {\n    risk: 'low', // low. medium, high\n    reason: 'Some reason why it\\'s the above risk.'\n  }\n}"
+      ]
+    },
+    "mtime": 1525537417749
+  },
+  "{\"filename\":\"/app/src/trains.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/src\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/src/trains.js",
+      "filenameRelative": "/app/src/trains.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "trains.js",
+      "sourceFileName": "trains.js",
+      "sourceRoot": "/app/src",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/src",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "trains"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function (weather) {\n  return {\n    risk: 'medium', // low. medium, high\n    reason: 'Some reason why it\\'s the above risk.'\n  };\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRyYWlucy5qcyJdLCJuYW1lcyI6WyJ3ZWF0aGVyIiwicmlzayIsInJlYXNvbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7O2tCQUFlLFVBQUNBLE9BQUQsRUFBYTtBQUMxQixTQUFPO0FBQ0xDLFVBQU0sUUFERCxFQUNXO0FBQ2hCQyxZQUFRO0FBRkgsR0FBUDtBQUlELEMiLCJmaWxlIjoidHJhaW5zLmpzIiwic291cmNlUm9vdCI6Ii9hcHAvc3JjIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgKHdlYXRoZXIpID0+IHtcbiAgcmV0dXJuIHtcbiAgICByaXNrOiAnbWVkaXVtJywgLy8gbG93LiBtZWRpdW0sIGhpZ2hcbiAgICByZWFzb246ICdTb21lIHJlYXNvbiB3aHkgaXRcXCdzIHRoZSBhYm92ZSByaXNrLidcbiAgfVxufSJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "trains.js"
+      ],
+      "names": [
+        "weather",
+        "risk",
+        "reason"
+      ],
+      "mappings": ";;;;;;kBAAe,UAACA,OAAD,EAAa;AAC1B,SAAO;AACLC,UAAM,QADD,EACW;AAChBC,YAAQ;AAFH,GAAP;AAID,C",
+      "file": "trains.js",
+      "sourceRoot": "/app/src",
+      "sourcesContent": [
+        "export default (weather) => {\n  return {\n    risk: 'medium', // low. medium, high\n    reason: 'Some reason why it\\'s the above risk.'\n  }\n}"
+      ]
+    },
+    "mtime": 1525538003881
+  }
+}
