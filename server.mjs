@@ -4,8 +4,8 @@ import DarkSky from 'dark-sky'
 import moment from 'moment'
 import _ from 'koa-route'
 import serve from 'koa-static'
-import water from './src/water'
-import trains from './src/trains'
+import water from './backend/water'
+import trains from './backend/trains'
 
 const ds = new DarkSky(process.env.DARKSKY_KEY)
 
