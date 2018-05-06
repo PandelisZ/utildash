@@ -15,7 +15,11 @@ const info = (props) => {
 
   return (
     <div>
-      
+      <h1>{props.name}</h1>
+      <h3>Risk: {props.risk}</h3>
+      {props.reasons > 0 && <ul>
+        {props.reasons.map(r => (<li>r</li>))}
+      </ul>}
     </div>
   )
 
@@ -74,6 +78,10 @@ class App extends Component {
             <code>
               {JSON.stringify(this.state.payload)}
             </code>
+
+            <div>
+
+            </div>
           </div>
           <div className="six wide column">
             <Map updateCoords={this.updateCoords} coords={this.state.coords} />

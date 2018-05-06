@@ -7,14 +7,18 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "http://pandelizz.github.io/utildash",
   "proxy": "http://localhost:8080",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.6.1",
     "dark-sky": "^1.1.2",
+    "gh-pages": "^1.1.0",
     "koa": "^2.5.1",
     "koa-glitch-keepalive": "^1.1.0",
     "koa-route": "^3.2.0",
